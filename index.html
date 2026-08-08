@@ -113,6 +113,13 @@
     padding: 30px 20px; text-align: center;
   }
   .portfolio-placeholder p{ font-size: 12.5px; color: var(--text-muted); line-height: 1.7; margin: 0 0 12px; }
+  .portfolio-grid{
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;
+  }
+  .portfolio-grid img{
+    width: 100%; height: 140px; object-fit: cover; border-radius: 12px;
+    border: 1px solid var(--border); display: block;
+  }
 
   .faq-item{
     border-bottom: 1px solid var(--border); padding: 14px 2px;
@@ -211,8 +218,11 @@
   <section id="portofolio">
     <p class="eyebrow">Our Work</p>
     <h2>Portofolio Homestudio</h2>
-    <div class="portfolio-placeholder">
-      <p>Galeri hasil foto lagi disiapkan. Sambil nunggu, cek hasil terbaru langsung di Instagram kami.</p>
+    <div class="portfolio-grid">
+      <img src="assets/IMG_6370.jpeg" alt="Hasil foto Homestudio" loading="lazy">
+    </div>
+    <div class="portfolio-placeholder" style="margin-top:12px;">
+      <p>Lihat lebih banyak hasil foto terbaru di Instagram kami.</p>
       <a class="btn-outline" href="https://instagram.com/homestudio.ido" target="_blank" rel="noopener noreferrer">Follow @homestudio.ido</a>
     </div>
   </section>
